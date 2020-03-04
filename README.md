@@ -23,8 +23,8 @@ bash porttest.sh -l
 
 ## Send packets
 Default ports reference:
-TCP_PORTS="80 443 22 2379 6443 2376 2380 3389 9099 10250 10254 30000"
-UDP_PORTS="8472 30000"
+* TCP_PORTS="80 443 22 2379 6443 2376 2380 3389 9099 10250 10254 30000"
+* UDP_PORTS="8472 30000"
 
 Send packets to default ports
 ```
