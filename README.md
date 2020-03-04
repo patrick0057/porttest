@@ -36,6 +36,12 @@ Send packets to custom ports
 bash porttest.sh -t 80 443 -u 8473 8888 -s <IP>
 ```
 
+## Print results
+This only needs to be run on the receiving node.
+```
+bash porttest.sh -r
+```
+
 ## Cleanup and kill netcat processes
 This only needs to be run on the receiving node.
 ```
