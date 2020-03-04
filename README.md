@@ -2,7 +2,7 @@
 This script will assist with testing ports for your Rancher installation.  It needs to be run on the receiving end as well as the sending end.  It works by sending a packet with the port number and if the receives that, it will make note of it.  Then when you are ready, you can check the results and it will tell you all of the ports that failed.
 
 # Known Issues
-Unfortunately with UDP testing, it can only test the first packet it receives.  If something else hits that port before the script's test packet, it will report a false negative as it stops listening after receiving the first packet.
+Unfortunately with UDP testing, it can only test the first packet it receives.  If something else hits that port before the script's test packet, it will report a false positive as it stops listening after receiving the first packet.  You also need to make sure you shutdown any services that are using both TCP and UDP ports that you would like to test, otherwise the script will report a false positive since it can't bind to those ports.
 
 # Dependencies
 * Netcat BSD version (usually just a yum or apt install)
