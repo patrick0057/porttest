@@ -20,7 +20,7 @@ if ! hash nc 2>/dev/null; then
 fi
 if ! hash pgrep 2>/dev/null; then
     recho '!!!pgrep was not found!!!'
-    recho "Please install nc (netcat) with your package manager"
+    recho "Please install pgrep with your package manager"
     exit 1
 fi
 
