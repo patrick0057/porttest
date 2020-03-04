@@ -12,7 +12,11 @@ Unfortunately with UDP testing, it can only test the first packet it receives.  
 
 ## Download
 ```
-curl -LO <URL>
+curl -LO https://github.com/patrick0057/porttest/raw/master/porttest.sh
+```
+or
+```
+wget https://github.com/patrick0057/porttest/raw/master/porttest.sh
 ```
 
 ## Spawn netcat processes (listen mode)
